@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	version="3.0">
+	<display-name></display-name>
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+
+
+	<servlet>
+		<servlet-name>loginServlet</servlet-name>
+		<servlet-class>com.example.servlet.LoginServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>loginServlet</servlet-name>
+		<url-pattern>/loginServlet</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>registerServlet</servlet-name>
+		<servlet-class>com.example.servlet.RegisterServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>registerServlet</servlet-name>
+		<url-pattern>/registerServlet</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>logoutServlet</servlet-name>
+		<servlet-class>com.example.servlet.LogoutServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>logoutServlet</servlet-name>
+		<url-pattern>/logoutServlet</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>publishSignatureServlet</servlet-name>
+		<servlet-class>com.example.servlet.PublishSignatureServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>publishSignatureServlet</servlet-name>
+		<url-pattern>/publishSignatureServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>publishAddFriendServlet</servlet-name>
+		<servlet-class>com.example.servlet.PublishAddFriendServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>publishAddFriendServlet</servlet-name>
+		<url-pattern>/publishAddFriendServlet</url-pattern>
+	</servlet-mapping>
+</web-app>
