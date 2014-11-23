@@ -44,6 +44,7 @@ public class RegisterServlet extends HttpServlet {
 			String password = object.getString("password");
 			String username = object.getString("username");
 			String email = object.getString("email");
+			String ip = object.getString("ip");
 			System.out.println(username + " " + password + " " + email);
 
 			
@@ -52,7 +53,7 @@ public class RegisterServlet extends HttpServlet {
 			response.setCharacterEncoding("utf-8");			
 						
 			RegisterService registerService = new RegisterService(username,
-					password, email);
+					password, email, ip);
 			JSONObject jsonObject = registerService.register();
 			
 			PrintWriter out = response.getWriter();

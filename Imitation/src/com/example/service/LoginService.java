@@ -43,22 +43,22 @@ public class LoginService {
 			int id = 0;
 			if (rs.next()) {
 				id = rs.getInt(1);				
-				
-				object.put("result", true);
-				object.put("id", id);
-				object.put("message", "登录成功！！！");
 
 				// 更改登录状态和IP
 				preparedStatement = (PreparedStatement) conn
 						.prepareStatement(SQLStatement.LoginService_LoginStatusLogin);
 				preparedStatement.setString(1, username);
-				preparedStatement.executeUpdate();
+				preparedStatement.executeUpdate();												
 				
 				preparedStatement = (PreparedStatement) conn
 						.prepareStatement(SQLStatement.LoginService_LoginIP);
 				preparedStatement.setString(1, ip);
 				preparedStatement.setInt(2, id);
 				preparedStatement.executeUpdate();
+				
+				object.put("result", true);
+				object.put("id", id);
+				object.put("message", "登录成功！！！");
 			} else {
 				object.put("result", false);
 				object.put("message", "大爷的,用户名或密码错误！！！");

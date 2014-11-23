@@ -18,7 +18,7 @@
 	<classpathentry kind="lib" path="C:/Users/Administrator/myeclipse/Imitation/reference/jaxb-impl-2.1.12.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Administrator/myeclipse/Imitation/reference/jersey-core-1.4.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Administrator/myeclipse/Imitation/reference/jersey-json-1.4.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Administrator/myeclipse/Imitation/reference/jettison-1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Administrator/myeclipse/Imitation/reference/jettison-1.1.jar" sourcepath="C:/Users/Administrator/.m2/repository/org/codehaus/jettison/jettison/1.1/jettison-1.1-sources.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Administrator/myeclipse/Imitation/reference/log4j-1.2.14.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Administrator/myeclipse/Imitation/reference/slf4j-api-1.5.6.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Administrator/myeclipse/Imitation/reference/slf4j-log4j12-1.5.6.jar"/>

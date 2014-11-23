@@ -56,4 +56,23 @@
 		<servlet-name>publishAddFriendServlet</servlet-name>
 		<url-pattern>/publishAddFriendServlet</url-pattern>
 	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>publishFriendDataServlet</servlet-name>
+		<servlet-class>com.example.servlet.PublishFriendDataServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>publishFriendDataServlet</servlet-name>
+		<url-pattern>/publishFriendDataServlet</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		<servlet-name>publishHeadPhotoServlet</servlet-name>
+		<servlet-class>com.example.servlet.PublishHeadPhotoServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>publishHeadPhotoServlet</servlet-name>
+		<url-pattern>/publishHeadPhotoServlet</url-pattern>
+	</servlet-mapping>
 </web-app>
